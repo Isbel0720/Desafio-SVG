@@ -1,0 +1,166 @@
+body{
+    padding: 0%;
+    margin: 0%;
+}
+
+.container-fluid1{
+    background-color: #74b9ff;
+    width: 100%;
+    height: 418px;
+}
+
+.yellow-sun{
+    width: 200px;
+    height: 130px;
+    margin-top: 30px;
+    padding-left: 30px;
+}
+
+.text{
+    width: 70%;
+    margin-left: 61px;
+}
+
+
+h1{
+    font-family:'Roboto';
+    font-weight: 900px;
+    color: white;
+    font-size: 40px;
+}
+
+p{
+    font-family:'Roboto';
+    color: white;
+    font-size: 15px;
+}
+
+.container-fluid2{
+    background-color: #f9e4b7;
+    width: 100%;
+    height: 198px;
+}
+
+.palm{
+    width: 200px;
+    height: 130px;
+    position: absolute;
+    top: 325px;
+    left: 560px;
+}
+
+.umbrella{
+    height: 100px;
+}
+
+.color-ball{
+    width: 223px;
+    height: 50px;
+    position: absolute;
+    left: 987px;
+    top: 457px;
+}
+
+.beach-girl{
+    height: 141px;
+    width: 143px;
+    position: absolute;
+    top: 475px;
+    left: 900px;
+}
+
+/*Efectos*/
+
+
+.yellow-sun{
+    animation: yellow-sun;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
+    animation-iteration-count: infinite; 
+    animation-play-state: 5s;
+}
+
+
+@keyframes yellow-sun {
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+
+.text{
+    animation: text;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;   
+}
+
+
+@keyframes text {
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+.palm{
+    animation: palm;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes palm{
+    0%{
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.umbrella{
+    animation: umbrella;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes umbrella{
+    0% { 
+        margin-left: 0px; 
+    }
+      
+    100% { 
+        margin-left: 50px; 
+    }
+}
+
+
+.color-ball{
+    animation: color-ball;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes color-ball{
+    0% { 
+        margin-left: 0px; 
+    }
+      
+    100% { 
+        padding-left: 50px; 
+    }
+}
+
+
