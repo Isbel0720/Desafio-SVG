@@ -14,11 +14,17 @@ body{
     height: 130px;
     margin-top: 30px;
     padding-left: 30px;
+    animation: yellow-sun;
+    animation-duration: 3s;
+    animation-iteration-count: infinite; 
 }
 
 .text{
     width: 70%;
     margin-left: 61px;
+    animation: text;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
 }
 
 
@@ -46,19 +52,26 @@ p{
     height: 130px;
     position: absolute;
     top: 325px;
-    left: 560px;
+    left: 550px;
+    animation: palm;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 }
 
 .umbrella{
     height: 100px;
+    animation: umbrella;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 }
 
 .color-ball{
-    width: 223px;
-    height: 50px;
     position: absolute;
     left: 987px;
     top: 457px;
+    animation: color-ball;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 }
 
 .beach-girl{
@@ -72,15 +85,6 @@ p{
 /*Efectos*/
 
 
-.yellow-sun{
-    animation: yellow-sun;
-    animation-timing-function: ease-in-out;
-    animation-duration: 3s;
-    animation-iteration-count: infinite; 
-    animation-play-state: 5s;
-}
-
-
 @keyframes yellow-sun {
     0%{
         opacity: 0;
@@ -91,76 +95,52 @@ p{
     }
 }
 
-
-.text{
-    animation: text;
-    animation-timing-function: ease-in-out;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;   
-}
-
-
 @keyframes text {
     0%{
         opacity: 0;
+        
     }
 
     100%{
         opacity: 1;
+        
     }
 }
 
-.palm{
-    animation: palm;
-    animation-timing-function: ease-in-out;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-}
 
 @keyframes palm{
     0%{
         opacity: 0;
+        transform: translateY(0%)
     }
 
     100% {
         opacity: 1;
+        transform: translateY(1%)
     }
-}
-
-
-.umbrella{
-    animation: umbrella;
-    animation-timing-function: ease-in-out;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
 }
 
 @keyframes umbrella{
     0% { 
-        margin-left: 0px; 
+        margin-left: -20%; 
     }
       
     100% { 
-        margin-left: 50px; 
+        margin-left: 20%; 
     }
 }
 
-
-.color-ball{
-    animation: color-ball;
-    animation-timing-function: ease-in-out;
-    animation-duration: 0s;
-    animation-iteration-count: infinite;
-}
 
 @keyframes color-ball{
-    0% { 
-        margin-left: 0px; 
-    }
-      
-    100% { 
-        padding-left: 50px; 
-    }
+    0% {
+        opacity: 0;
+        margin-right: 20%;
+      }
+
+      100% {
+        opacity: 1;
+        margin-right: -20%;
+      }
 }
 
 
